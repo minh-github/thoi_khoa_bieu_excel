@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/app.css">
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+    <link rel="stylesheet" href="../../fontAW-6/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+  <button class="logout">logout</button>
+  <div class="overlay"></div>
+    <div class="blockInsert">      
+      <input type="file" id="fileUpload" hidden/>
+      <label class="labelFile" for="fileUpload">Upload File Excel của bạn</label>
+    </div>
+    <div class="container">
+      <div class="pre"><i class="fa-solid fa-angle-left"></i></div>
+      <div class="next"><i class="fa-solid fa-angle-right"></i></div>
+      <body>
+      <div class="banner">
+        <span class="banner-day">20</span>
+      </div>
+      <div class="card">
+        <div class="front">
+          <div class="contentfront">
+            <div class="month">
+              <table>
+                <tr class="orangeTr">
+                  <th class="sunday">Su</th>
+                  <th>Mo</th>
+                  <th>Tu</th>
+                  <th>We</th>
+                  <th>Th</th>
+                  <th>Fr</th>
+                  <th>Sa</th>
+                </tr>
+                <tbody id="js-calendar-body"></tbody>
+              </table>
+            </div>
+            <div class="date">
+              <div class="datecont">
+                <div id="date"></div>
+                <div id="day"></div>
+                <div id="month" class="js-month"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="back">
+          <div class="contentback">
+            <div class="backcontainer">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/xlsx.full.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.13.5/jszip.js"></script>
+  <script type="module" src="../js/app.js"></script>
+  <!-- <script src="./access/test.js"></script> -->
+</html>
